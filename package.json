@@ -1,0 +1,32 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "Creating a Todo-List for The Odin Project curriculem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fryingLotus/Todo-List.git"
+  },
+  "author": "Lotus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fryingLotus/Todo-List/issues"
+  },
+  "homepage": "https://github.com/fryingLotus/Todo-List#readme",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "eslint": "^8.55.0",
+    "file-loader": "^6.2.0",
+    "style-loader": "^3.3.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0"
+  }
+}

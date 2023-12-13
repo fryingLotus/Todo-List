@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style.css">
+   
+    <title>Todo-List</title>
+</head>
+<body>
+    
+    <h1 class="title">Todo List!</h1>
+    <div class="grid-container">
+        
+        <div class="left-side">
+           
+            <div class="second-content">
+                <h1 class="projects-title">Projects</h1>
+                <div class="projects-list" id="projects-list">
+                    <!-- <button class="project-button" style="background-color: rgb(255, 83, 56);"><p>My project</p></button> -->
+                </div>
+                <button class="left-button-list" >
+                    <img src="../src/assets/plus-circle.svg" alt="">
+                    <p>Add Projects</p>
+                </button>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="right-grid-container">
+            <div class="task-name"></div>
+            <div class="tabTop">
+                <button data-button id="AllTask">All Tasks</button>
+                <button data-button id="today">Today</button>
+                <button data-button id="priority">Priority</button>
+                
+            </div>
+            
+        </div>
+            <div class="task-list">
+               <!-- <input type="button" class="checkBox">
+               <h3>Gaming</h3>
+               <h3>11-23-2023</h3>
+               <h3>High</h3> -->
+            </div>
+     
+            <button class="right-button" data-add-task>
+                <img src="../src/assets/plus-circle.svg" alt="">
+                <p>Add Task</p>
+            </button>
+        </div>
+    </div>  
+    <!-- modal -->
+    <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="title1">Please input the form</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form class="formStyle" action="" method="post">
+            <input type="text" id="taskTitle" placeholder="What's the task name?">
+            <!-- <input type="text" id="author" placeholder="Who's the author of the book">
+            <input type="number" id="page" placeholder="How many page are theres">
+            <label for="status">Have you read it?</label> -->
+            <input type="date" id="taskDate" placeholder="What's the date?">
+            <select class="form-select" aria-label="Default select example" id="priorityList">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+             
+                
+              </select>
+             
+                <!-- Options will be added dynamically -->
+            </select>
+            <!-- <div class="button-group">
+                <button  data-button type="button" value="yes">Yes</button>
+                <button  data-button type="button" value="no">No</button>
+            </div> -->
+           
+            <input type="submit" id="submit-button" value="Add Task">
+        </form>
+        </div>
+      </div>
+      <div id="overlay"></div>
+      <!-- end modal -->
+    <script src="main.js"></script>
+</body>
+</html>
